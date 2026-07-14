@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Termin buchen — Dents &amp; Doctors</title>
+<meta name="description" content="Termin bei Dents &amp; Doctors in Duisburg-Neudorf – Zahnmedizin und Kinderheilkunde. Online anfragen oder telefonisch buchen.">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-glow"></div>
+<div class="lscan"></div>
+
+<nav id="nav">
+  <a id="logo" href="index.html">Dents<em>&amp;</em>Doctors</a>
+  <ul id="nav-links">
+    <li><a href="index.html">Start</a></li>
+    <li><a href="mehr-erfahren.html">Leistungen</a></li>
+    <li><a href="karriere.html">Karriere</a></li>
+    <li><a href="termin.html" class="active">Termin</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="page page-narrow">
+    <div class="crumb fade-in"><a href="index.html">Start</a> &nbsp;/&nbsp; <span>Termin buchen</span></div>
+
+    <div class="fade-in">
+      <div class="eyebrow"><span class="el"></span>Terminvereinbarung</div>
+      <h1 class="sh">Ihr Termin,<br>ganz <em>unkompliziert.</em></h1>
+      <p class="lead">Vereinbaren Sie einen Termin in unserer Zahn- oder Kinderarztpraxis.
+        Füllen Sie das Formular aus &ndash; wir melden uns zur Bestätigung.
+        Bei akuten Beschwerden erreichen Sie uns am schnellsten telefonisch.</p>
+    </div>
+
+    <div class="grid grid-2 fade-in">
+      <div class="card">
+        <h3>Zahnarztpraxis</h3>
+        <div class="big">0203&thinsp;369&thinsp;336&thinsp;&ndash;&thinsp;10</div>
+        <small>Mo&ndash;Fr nach Vereinbarung</small>
+      </div>
+      <div class="card">
+        <h3>Kinderarztpraxis</h3>
+        <div class="big">0203&thinsp;369&thinsp;336&thinsp;&ndash;&thinsp;50</div>
+        <small>Mo&ndash;Fr nach Vereinbarung</small>
+      </div>
+    </div>
+
+    <form class="form fade-in" data-mailto="termin@dents-doctors.de" data-subject="Terminanfrage über die Website" novalidate>
+      <div class="field">
+        <label for="fach">Praxis <span class="req">*</span></label>
+        <select id="fach" name="fach" data-prefill="fach" data-label="Praxis" required>
+          <option value="">Bitte wählen …</option>
+          <option value="zahnarzt">Zahnmedizin</option>
+          <option value="kinder">Kinderheilkunde</option>
+        </select>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="name">Name <span class="req">*</span></label>
+          <input type="text" id="name" name="name" data-label="Name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="birth">Geburtsdatum</label>
+          <input type="date" id="birth" name="birth" data-label="Geburtsdatum">
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="email">E-Mail <span class="req">*</span></label>
+          <input type="email" id="email" name="email" data-label="E-Mail" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="phone">Telefon</label>
+          <input type="tel" id="phone" name="phone" data-label="Telefon" autocomplete="tel">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="reason">Anliegen</label>
+        <select id="reason" name="reason" data-label="Anliegen">
+          <option value="">Bitte wählen …</option>
+          <option>Vorsorge / Kontrolle</option>
+          <option>Prophylaxe / Zahnreinigung</option>
+          <option>Behandlung / Beschwerden</option>
+          <option>Erstvorstellung</option>
+          <option>Impfung / Vorsorge (Kinder)</option>
+          <option>Sonstiges</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="pref">Wunschzeitraum</label>
+        <input type="text" id="pref" name="pref" data-label="Wunschzeitraum" placeholder="z. B. vormittags, ab nächster Woche …">
+      </div>
+
+      <div class="field">
+        <label for="msg">Nachricht</label>
+        <textarea id="msg" name="msg" data-label="Nachricht" placeholder="Ihre Nachricht an uns …"></textarea>
+      </div>
+
+      <label class="consent">
+        <input type="checkbox" name="consent" required>
+        <span>Ich willige ein, dass meine Angaben zur Bearbeitung meiner Terminanfrage
+          verarbeitet werden. Hinweise in der <a href="datenschutz.html">Datenschutzerklärung</a>. <span class="req">*</span></span>
+      </label>
+
+      <div class="btns">
+        <button type="submit" class="btn bs">Terminanfrage senden</button>
+        <a href="kontakt.html" class="btn bg">Kontaktdaten</a>
+      </div>
+
+      <p class="form-note">Pflichtfelder <span style="color:var(--accent-mid)">*</span>.
+        Ihre Anfrage wird über Ihr E-Mail-Programm versendet. Alternativ erreichen Sie uns
+        jederzeit telefonisch. Bei einem medizinischen Notfall wählen Sie den Notruf&nbsp;112.</p>
+    </form>
+    <div class="form-msg">Ihr E-Mail-Programm wurde geöffnet. Bitte senden Sie die vorbereitete
+      Nachricht ab &ndash; wir bestätigen Ihren Termin so schnell wie möglich.</div>
+  </div>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-brand">Dents<em>&amp;</em>Doctors &mdash; MVZ Duisburg-Neudorf</div>
+    <div class="foot-links">
+      <a href="termin.html">Termin buchen</a>
+      <a href="mehr-erfahren.html">Mehr erfahren</a>
+      <a href="karriere.html">Karriere</a>
+      <a href="bewerben.html">Jetzt bewerben</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
