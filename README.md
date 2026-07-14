@@ -1,2 +1,0 @@
-# dentist
-Zahnarzt Landing Page
